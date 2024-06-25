@@ -129,7 +129,7 @@ def calculate_quantity(symbol='BTCUSDT', risk_factor=Config.RISK_FACTOR):
         return adjust_quantity_to_meet_requirements(quantity, symbol)
     except Exception as e:
         logging.error(f"Error calculating quantity: {e}")
-        return 0
+        return 0 
 
 # Function to adjust quantity to meet requirements
 def adjust_quantity_to_meet_requirements(quantity, symbol='BTCUSDT'):
